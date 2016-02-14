@@ -341,6 +341,16 @@
                                         <rect key="frame" x="0.0" y="32" width="320" height="760"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1wF-Ig-t3u">
+                                        <rect key="frame" x="0.0" y="689" width="320" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapLogout:" destination="Nrp-8v-Xqs" eventType="touchUpInside" id="eAS-Rs-NKq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings_nav" id="Mhy-ja-3d0">
@@ -364,6 +374,7 @@
                     <size key="freeformSize" width="320" height="760"/>
                     <connections>
                         <outlet property="scrollView" destination="bka-e2-kWZ" id="pVy-g9-eZH"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="logoutSegue" id="Q1z-Zx-dNP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD1-Yr-FAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,4 +478,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q1z-Zx-dNP"/>
+    </inferredMetricsTieBreakers>
 </document>

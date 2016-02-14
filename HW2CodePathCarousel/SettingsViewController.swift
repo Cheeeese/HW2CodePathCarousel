@@ -29,6 +29,25 @@ class SettingsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func tapLogout(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Sign Out?", message: "Are you sure you want to sign out?", preferredStyle: .ActionSheet)
+        let logoutAction = UIAlertAction(title: "Log Out", style: .Destructive) { (action) in
+            self.performSegueWithIdentifier("logoutSegue", sender: self)
+        }
+        // add the logout action to the alert controller
+        alertController.addAction(logoutAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            // handle case of user canceling. Doing nothing will dismiss the view.
+        }
+        // add the cancel action to the alert controller
+        alertController.addAction(cancelAction)
+        
+        presentViewController(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
