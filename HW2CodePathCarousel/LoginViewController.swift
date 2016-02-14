@@ -44,7 +44,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             self.loginIndicator.startAnimating()
             
             delay(2) {
-                if self.emailField.text == "test" && self.passwordField.text == "test" {
+                if self.emailField.text == "t" && self.passwordField.text == "t" {
                     println("correct email and password")
                     self.performSegueWithIdentifier("signInSegue", sender: self)
                 }
@@ -118,6 +118,12 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         ),
         dispatch_get_main_queue(), closure)
     }
+    
+    @IBAction func pressBack(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
+
+
     
     /*
     // MARK: - Navigation

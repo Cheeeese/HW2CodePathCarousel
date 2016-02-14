@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>40F901E4-B201-427A-A1D3-D4472821CE37</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HW2CodePathCarousel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C5E44631D7FE944354DB87EC3AC2E46E6A76D8ED</key>
+		<string>https://github.com/Cheeeese/HW2CodePathCarousel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HW2CodePathCarousel.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C5E44631D7FE944354DB87EC3AC2E46E6A76D8ED</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Cheeeese/HW2CodePathCarousel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C5E44631D7FE944354DB87EC3AC2E46E6A76D8ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5E44631D7FE944354DB87EC3AC2E46E6A76D8ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HW2CodePathCarousel</string>
+		</dict>
+	</array>
+</dict>
+</plist>
