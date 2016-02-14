@@ -14,8 +14,11 @@ Completed user stories:
     * If the username or password fields are empty, user sees an error alert.
     * If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
     * If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
+    * Optional: Sign in Screen animates in on loading of the screen
+    * Optional: User can swipe down to dismiss the keyboard
 * [x] Required: User can Swipe through Tutorial Screens
   * User can page between the screens
+  * Optional: Button on the tutorial screen fades in and pageControl disappears when scrolling to the fourth screen
 * [x] Required: User can scroll through an Image Timeline screen after signing in and navigate from this page
   * User can tap on the conversations button to see the conversations screen (push).
   * User can tap on the profile image to see the settings view (modal from below).
@@ -23,6 +26,6 @@ Completed user stories:
 * [x] Required: User can access a Settings screen and dismiss the settings to navigate back to the Image Timeline screen
   * User can log out
 
-![Video Walkthrough](HW2_AllRequired.gif)
+![Video Walkthrough](HW2_withOptionals.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
