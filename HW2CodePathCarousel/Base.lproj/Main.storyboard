@@ -74,6 +74,7 @@
                     <size key="freeformSize" width="320" height="1136"/>
                     <connections>
                         <outlet property="introScrollView" destination="5bx-Vg-HHL" id="pio-jK-2kh"/>
+                        <outlet property="introTile1" destination="Q16-VK-WfB" id="OfI-QX-Glz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -107,7 +108,7 @@
             <objects>
                 <viewController id="PR6-T3-F86" customClass="LoginViewController" customModule="HW2CodePathCarousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="110-Tp-zQk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="NQa-S9-oY6">
@@ -167,7 +168,7 @@
                                     </view>
                                 </subviews>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_nav_bar" id="bYq-HP-uqs">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_nav_bar" id="bYq-HP-uqs" userLabel="loginNavBar">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -191,6 +192,7 @@
                         <outlet property="fieldParentView" destination="ouP-Ba-MZn" id="xBp-Da-Q5E"/>
                         <outlet property="loginButton" destination="42L-zj-8QO" id="JWg-O4-TG3"/>
                         <outlet property="loginIndicator" destination="bpa-62-FhG" id="cJj-21-O4i"/>
+                        <outlet property="loginNavBar" destination="bYq-HP-uqs" id="N2a-Jw-mrS"/>
                         <outlet property="passwordField" destination="DYo-tx-BTc" id="L4E-a5-F9c"/>
                         <outlet property="scrollView" destination="NQa-S9-oY6" id="uQ8-pQ-QoF"/>
                         <segue destination="IqI-8t-V80" kind="modal" identifier="signInSegue" modalTransitionStyle="crossDissolve" id="ifO-cl-VY0"/>
@@ -257,6 +259,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="button" destination="egu-GL-saL" id="yX5-5m-j4b"/>
                         <outlet property="pageControl" destination="qdi-lI-w6a" id="VZd-Nn-Adh"/>
                         <outlet property="tutorialScrollView" destination="xC8-vm-D8z" id="SrR-tH-tUC"/>
                     </connections>
@@ -422,7 +425,7 @@
             <objects>
                 <viewController id="opn-Pv-gUn" customClass="ConversationsViewController" customModule="HW2CodePathCarousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lzv-kx-l40">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="conversations" id="jGh-pH-qH3">

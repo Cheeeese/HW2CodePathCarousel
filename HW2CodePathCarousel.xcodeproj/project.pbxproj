@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		442B5AFA1C708A7C006DF6BE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B5AF91C708A7C006DF6BE /* SettingsViewController.swift */; };
+		449150671C70FB5400F01A2D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449150661C70FB5400F01A2D /* Common.swift */; };
 		44935D181C707FA400AF7DBF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44935D171C707FA400AF7DBF /* TutorialViewController.swift */; };
 		44935D1A1C70864000AF7DBF /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44935D191C70864000AF7DBF /* ConversationsViewController.swift */; };
 		44935D1C1C70886C00AF7DBF /* ImageTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44935D1B1C70886C00AF7DBF /* ImageTimelineViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		442B5AF91C708A7C006DF6BE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		449150661C70FB5400F01A2D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		44935D171C707FA400AF7DBF /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		44935D191C70864000AF7DBF /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		44935D1B1C70886C00AF7DBF /* ImageTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTimelineViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				44ACCF181C6C946900DDF640 /* AppDelegate.swift */,
 				44ACCF1A1C6C946900DDF640 /* ViewController.swift */,
 				44ACCF1C1C6C946900DDF640 /* Main.storyboard */,
+				449150661C70FB5400F01A2D /* Common.swift */,
 				442B5AF91C708A7C006DF6BE /* SettingsViewController.swift */,
 				44935D1B1C70886C00AF7DBF /* ImageTimelineViewController.swift */,
 				44935D191C70864000AF7DBF /* ConversationsViewController.swift */,
@@ -241,6 +244,7 @@
 				44935D181C707FA400AF7DBF /* TutorialViewController.swift in Sources */,
 				44ACCF191C6C946900DDF640 /* AppDelegate.swift in Sources */,
 				44935D1C1C70886C00AF7DBF /* ImageTimelineViewController.swift in Sources */,
+				449150671C70FB5400F01A2D /* Common.swift in Sources */,
 				442B5AFA1C708A7C006DF6BE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

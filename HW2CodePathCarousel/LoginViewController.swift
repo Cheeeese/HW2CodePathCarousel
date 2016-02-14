@@ -13,6 +13,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var buttonParentView: UIView!
+    @IBOutlet weak var loginNavBar: UIImageView!
 
     @IBAction func didTap(sender: AnyObject) {
         print("did tap")
@@ -76,6 +77,30 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
     
+    override func viewWillAppear(animated: Bool) {
+        // Set initial transform values 20% of original size
+        let transform = CGAffineTransformMakeScale(0.2, 0.2)
+        // Apply the transform properties of the views
+        loginNavBar.transform = transform
+        fieldParentView.transform = transform
+        // Set the alpha properties of the views to transparent
+        loginNavBar.alpha = 0
+        fieldParentView.alpha = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        //Animate the code within over 0.3 seconds...
+        UIView.animateWithDuration(0.3) { () -> Void in
+            // Return the views transform properties to their default states.
+            self.fieldParentView.transform = CGAffineTransformIdentity
+            self.loginNavBar.transform = CGAffineTransformIdentity
+            // Set the alpha properties of the views to fully opaque
+            self.fieldParentView.alpha = 1
+            self.loginNavBar.alpha = 1
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -121,6 +146,15 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func pressBack(sender: AnyObject) {
         navigationController!.popViewControllerAnimated(true)
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        // This method is called as the user scrolls
+        println(scrollView.contentOffset.y)
+        if scrollView.contentOffset.y <= -50 {
+            view.endEditing(true)
+        }
+
     }
 
 

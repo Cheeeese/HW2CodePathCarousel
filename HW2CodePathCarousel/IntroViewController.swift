@@ -8,14 +8,17 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var introScrollView: UIScrollView!
+    @IBOutlet weak var introTile1: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         introScrollView.contentSize = CGSize(width: 320, height: 1150)
+        
+        introScrollView.delegate = self
         
         
         // Do any additional setup after loading the view.
@@ -26,6 +29,13 @@ class IntroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        var pagePosition : Int = Int(round(scrollView.contentOffset.y))
+        // println(pagePosition)
+        // introTile1.center.y = CGFloat(pagePosition)
+
+    }
 
     /*
     // MARK: - Navigation
