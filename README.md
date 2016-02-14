@@ -4,7 +4,7 @@ Homework 2 CodePath: Carousel Project
 
 This is an iOS demo that creates an example app that uses XCode and Swift to create sign in, error, and scroll flows based on an example app (Carousel).  I utilized the example step by step Tutorials in the [CodePath Week 2 Project Folder] (http://courses.codepath.com/courses/ios_for_designers/unit/2#!assignment) to create this app.  
 
-Time spent: ~6 hours developing required pieces
+Time spent: ~6 hours developing required pieces + ~2 hours for optionals (still have more to do)
 
 Completed user stories:
 * [x] Required: User can scroll in the initial screen 
